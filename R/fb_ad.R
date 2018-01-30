@@ -265,7 +265,7 @@ fbad_list_ad <- function(fbacc, id, statuses, fields = 'id', simplify = TRUE) {
 
     ## return merged data.frame
     res <- do.call(rbind, res)
-    rownames(res) <- make.names(names = c("", "Ad"), unique = TRUE)
+    rownames(res) <- NULL
     res
 
 }
